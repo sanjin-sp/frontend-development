@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery - Flexbox</title>
+    <style>
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            font-family: verdana, sans-serif;
+            font-size: 1em;        
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .tile {
+            flex-basis: 15%;
+            margin: 2.5%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 2px;
+        }
+
+        .tile-picture {
+            background-color: rgb(102, 169, 225);
+        }
+
+        .tile-text {
+            font-size: 0.75em;
+            background-color: rgb(247, 247, 247);
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        header { 
+            font-size: 1.4em;
+            margin: 2.5% 2.5% 0% 2.5%;
+        }
+
+        p {
+            font-size: 1em;
+            margin: 0px 2.5%;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .tile {
+                flex-basis: 15%;
+                margin: 2.5%;
+            }
+            header {
+                margin: 2.5% 2.5% 0% 2.5%;
+            }
+            p {
+                margin: 0% 2.5%;
+            }
+            .container {
+                font-size: 1em;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .tile {
+                flex-basis: 23.33%;
+                margin: 5%;
+            }
+            header {
+                margin: 5% 5% 0% 5%;
+            }
+            p {
+                margin: 0% 5%;
+            }
+            .container {
+                font-size: 0.95em;
+            }
+        }
+        @media screen and (max-width: 414px) {
+            .tile {
+                flex-basis: 80%;
+                margin: 10%;
+            }
+            header {
+                margin: 10% 10% 0% 10%;
+            }
+            p {
+                margin: 0% 10%;
+            }
+            .container {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Gallery Heading</header>
+        <div class="row">
+            <div class="tile">
+                <div class="tile-picture">
+                    <img src="placeholder-image.png" alt="Placeholder image">
+                </div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-picture">
+                    <img src="placeholder-image.png" alt="Placeholder image">
+                </div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-picture">
+                    <img src="placeholder-image.png" alt="Placeholder image">
+                </div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-picture">
+                    <img src="placeholder-image.png" alt="Placeholder image">
+                </div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-picture">
+                    <img src="placeholder-image.png" alt="Placeholder image">
+                </div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-picture">
+                    <img src="placeholder-image.png" alt="Placeholder image">
+                </div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-picture">
+                    <img src="placeholder-image.png" alt="Placeholder image">
+                </div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-picture">
+                    <img src="placeholder-image.png" alt="Placeholder image">
+                </div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-picture">
+                    <img src="placeholder-image.png" alt="Placeholder image">
+                </div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-picture">
+                    <img src="placeholder-image.png" alt="Placeholder image">
+                </div>
+                <div class="tile-text">Image Title</div>
+            </div>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                massa.
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                felis,
+                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+                justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+                vitae,
+                usto. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+                semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                Phasellus viverra nulla ut metus varius laoreet.</p>
+        </div>
+    </div>
+</body>
+
+</html>
